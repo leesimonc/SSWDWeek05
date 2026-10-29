@@ -1,12 +1,29 @@
 <html>
-    <body>
-        <form method="POST" action="createNewBooking.php">
- 	    Members ID: <input type="text" name="memberID " /> <br/>
-	    Courd ID: <input type="text" name="courtID" /> <br/>
-            Booking Date: <input type="date" name="bookingDate"/><br>
-            Start Time: <input type="time" name="startTime"/><br>
-            End Time: <input type="time" name="endTime"/><br>
-            <input type="submit">
-        </form>
-    </body>
+
+<body>
+    <form method="POST" action="createNewBooking.php">
+        Member ID:
+        <input type="number" name="memberID" required />
+        <br/>
+
+        Court ID:
+        <input type="number" name="courtID" required />
+        <br/>
+
+        Booking Date:
+        <input type="date" name="bookingDate" required />
+        <br/>
+
+        Start Time:
+        <input type="time" name="startTime" required />
+        <br/>
+
+        End Time:
+        <input type="time" name="endTime" required />
+        <br/>
+
+        <input type="submit" value="Create Booking" />
+    </form>
+</body>
+
 </html>

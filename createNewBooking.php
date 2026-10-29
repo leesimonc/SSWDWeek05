@@ -20,4 +20,11 @@ if (mysqli_query($conn, $sql)) {
 */
 
 mysqli_close($conn); 
+
+
+
+/* Part 1
+Connected to tennisclub successfullyinsert into booking(memberid,courtid,bookingDate,starttime,endtime) values ('2','3','2026-10-29','10:32','10:32')
+MemberID 13 and CourtID 15 shouldn't work as there isn't that many in the database
+*/
 ?>
