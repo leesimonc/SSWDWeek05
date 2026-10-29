@@ -7,6 +7,9 @@ include("dbcon.php");
 <body>
     <form method="POST" action="createNewBooking.php">
 
+        <!-- using a dropdown ensures the user selects an existing member rather than
+         typing invalid member ID's. This helps prevent db errors caused by referencing
+         a member that does not exist. -->
         Member:
         <select name="memberID" required>
             <?php include("createMemberDropdown.php"); ?>
